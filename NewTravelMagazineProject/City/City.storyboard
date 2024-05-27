@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--여행-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="City" id="Y6W-OH-hqX" customClass="CityViewController" customModule="NewTravelMagazineProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4KS-Wx-Pwt">
+                                <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="00g-vJ-oer"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-NA-DuQ">
+                                <rect key="frame" x="0.0" y="115" width="393" height="654"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4KS-Wx-Pwt" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4h2-ue-r0r"/>
+                            <constraint firstItem="0m5-NA-DuQ" firstAttribute="top" secondItem="4KS-Wx-Pwt" secondAttribute="bottom" id="8uv-YB-Jmd"/>
+                            <constraint firstItem="0m5-NA-DuQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="B4q-pW-GFt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0m5-NA-DuQ" secondAttribute="trailing" id="TPd-vP-O1d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0m5-NA-DuQ" secondAttribute="bottom" id="aV3-It-R7M"/>
+                            <constraint firstItem="4KS-Wx-Pwt" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="hFh-mI-deE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4KS-Wx-Pwt" secondAttribute="trailing" id="rcu-IB-XG1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="여행" image="suitcase.cart.fill" catalog="system" id="XT9-vA-eCl"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="citySearchBar" destination="4KS-Wx-Pwt" id="AYh-N2-ktp"/>
+                        <outlet property="cityTableView" destination="0m5-NA-DuQ" id="UD5-O1-mJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="suitcase.cart.fill" catalog="system" width="128" height="122"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
