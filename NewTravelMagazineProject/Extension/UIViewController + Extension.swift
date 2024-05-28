@@ -4,10 +4,19 @@
 //
 //  Created by Joy Kim on 5/27/24.
 //
+// Extension: 재사용할
 
 import UIKit
 
 extension UIViewController {
+    
+    //기본 뷰 UI
+    
+    func configureView(_ title: String) {
+        navigationItem.title = title
+    }
+    
+    
 
     func showAlert(title: String) {
         
@@ -22,8 +31,8 @@ extension UIViewController {
         alert.addAction(ok)
         
         present(alert, animated: true)
- 
     }
+    
     
     
 

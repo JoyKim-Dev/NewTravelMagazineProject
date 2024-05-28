@@ -81,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350662DD2C05FA5F0043B2FC /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				35D805D72C04B56B000D5F39 /* MagazineInfo.swift */,
+				35D805D62C04B56B000D5F39 /* Restaurant.swift */,
+				35D805D52C04B56B000D5F39 /* TravelModel.swift */,
+			);
+			path = Dummy;
+			sourceTree = "<group>";
+		};
 		35C311CF2C0486B300649CE8 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		35C311DA2C0486B300649CE8 /* NewTravelMagazineProject */ = {
 			isa = PBXGroup;
 			children = (
+				350662DD2C05FA5F0043B2FC /* Dummy */,
 				35C311EF2C04871200649CE8 /* TravelMain */,
 				35D805BE2C04A9EB000D5F39 /* Restaurant */,
 				35C311F12C04873500649CE8 /* City */,
@@ -114,9 +125,6 @@
 				35C311E42C0486B400649CE8 /* Assets.xcassets */,
 				35C311E62C0486B400649CE8 /* LaunchScreen.storyboard */,
 				35C311E92C0486B400649CE8 /* Info.plist */,
-				35D805D72C04B56B000D5F39 /* MagazineInfo.swift */,
-				35D805D62C04B56B000D5F39 /* Restaurant.swift */,
-				35D805D52C04B56B000D5F39 /* TravelModel.swift */,
 			);
 			path = NewTravelMagazineProject;
 			sourceTree = "<group>";

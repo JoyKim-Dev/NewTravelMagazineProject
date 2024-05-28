@@ -9,6 +9,9 @@ import UIKit
 
 class AdTitleCell: UITableViewCell {
 
+    // 셀 identifier 타이포를 줄이기 위해 static property로 생성하여 재사용
+    static let identifier = "AdTitleCell"
+    
     @IBOutlet var adTitleLabel: UILabel!
     @IBOutlet var adLabel: UILabel!
     
@@ -20,12 +23,14 @@ class AdTitleCell: UITableViewCell {
     func configureLayout() {
         print(#function)
 
-        adTitleLabel.font = .boldSystemFont(ofSize: 17)
-        adLabel.font = .systemFont(ofSize: 13)
+        adTitleLabel.font = .boldSystemFont(ofSize: 20)
         adTitleLabel.backgroundColor = .gray
-        adLabel.backgroundColor = .white
-       
         
+        adLabel.font = .systemFont(ofSize: 15)
+        adLabel.backgroundColor = .lightGray.withAlphaComponent(0.2)
+        adLabel.textAlignment = .center
+        adLabel.layer.cornerRadius = 4
+    
     }
     
 }
