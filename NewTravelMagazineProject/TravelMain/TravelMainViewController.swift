@@ -5,6 +5,8 @@
 //  Created by Joy Kim on 5/27/24.
 //
 
+//별 : 코스모스 라이브러리 사용 
+
 import UIKit
 import Kingfisher
 

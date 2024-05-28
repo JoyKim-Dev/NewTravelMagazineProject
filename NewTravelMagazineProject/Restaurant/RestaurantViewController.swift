@@ -19,7 +19,7 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "RESTAURANT"
+        navigationItem.title = "RESTARURANT"
         restaurantSearchBar.placeholder = "먹고 싶은 메뉴를 검색해보세요"
         restaurantSearchBar.delegate = self
         restaurantTableView.delegate = self
@@ -29,8 +29,7 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         let xib = UINib(nibName: "SmallImageCell", bundle: nil)
         restaurantTableView.register(xib, forCellReuseIdentifier: "SmallImageCell")
    
-        
-        
+
                 let left = UIBarButtonItem(title: "한식", style: .plain, target: self, action: #selector(leftBarBtnClicked))
                 let all = UIBarButtonItem(title: "전체보기", style: .plain, target: self, action: #selector(allBarBtnClicked))
         

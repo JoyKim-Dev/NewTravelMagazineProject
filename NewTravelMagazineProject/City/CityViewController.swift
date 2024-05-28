@@ -18,6 +18,7 @@ class CityViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "TRAVEL"
         citySearchBar.placeholder = "먹고 싶은 메뉴를 검색해보세요"
         citySearchBar.delegate = self
         cityTableView.delegate = self
