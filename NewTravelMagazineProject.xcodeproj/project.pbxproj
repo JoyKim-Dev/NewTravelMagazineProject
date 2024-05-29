@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35461D012C07460800CEDF08 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D002C07460800CEDF08 /* CityInfo.swift */; };
 		35461D032C074BE500CEDF08 /* detailCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D022C074BE500CEDF08 /* detailCityViewController.swift */; };
 		35461D052C074BF500CEDF08 /* detailAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D042C074BF500CEDF08 /* detailAdViewController.swift */; };
 		35461D082C0763BA00CEDF08 /* FullImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35461D072C0763BA00CEDF08 /* FullImageCell.xib */; };
@@ -40,10 +39,10 @@
 		35D805D92C04B56B000D5F39 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D805D62C04B56B000D5F39 /* Restaurant.swift */; };
 		35D805DA2C04B56B000D5F39 /* MagazineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D805D72C04B56B000D5F39 /* MagazineInfo.swift */; };
 		35D805DD2C04BED6000D5F39 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 35D805DC2C04BED6000D5F39 /* Kingfisher */; };
+		35FF6D9F2C078B83009C3157 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FF6D9E2C078B83009C3157 /* CityInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35461D002C07460800CEDF08 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityInfo.swift; path = "../../../../Desktop/Swift coding/🩷sesac/sesac asset/CityInfo.swift"; sourceTree = "<group>"; };
 		35461D022C074BE500CEDF08 /* detailCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailCityViewController.swift; sourceTree = "<group>"; };
 		35461D042C074BF500CEDF08 /* detailAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailAdViewController.swift; sourceTree = "<group>"; };
 		35461D062C0763BA00CEDF08 /* FullImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageCell.swift; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		35D805D52C04B56B000D5F39 /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
 		35D805D62C04B56B000D5F39 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		35D805D72C04B56B000D5F39 /* MagazineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineInfo.swift; sourceTree = "<group>"; };
+		35FF6D9E2C078B83009C3157 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		350662DD2C05FA5F0043B2FC /* Dummy */ = {
 			isa = PBXGroup;
 			children = (
-				35461D002C07460800CEDF08 /* CityInfo.swift */,
+				35FF6D9E2C078B83009C3157 /* CityInfo.swift */,
 				35D805D72C04B56B000D5F39 /* MagazineInfo.swift */,
 				35D805D62C04B56B000D5F39 /* Restaurant.swift */,
 				35D805D52C04B56B000D5F39 /* TravelModel.swift */,
@@ -301,6 +301,7 @@
 				35C311E02C0486B300649CE8 /* ViewController.swift in Sources */,
 				35D805C42C04AD94000D5F39 /* UIViewController + Extension.swift in Sources */,
 				35461D032C074BE500CEDF08 /* detailCityViewController.swift in Sources */,
+				35FF6D9F2C078B83009C3157 /* CityInfo.swift in Sources */,
 				35D805C22C04AA1B000D5F39 /* RestaurantViewController.swift in Sources */,
 				35D805D42C04B223000D5F39 /* AdTitleCell.swift in Sources */,
 				35461D052C074BF500CEDF08 /* detailAdViewController.swift in Sources */,
@@ -312,7 +313,6 @@
 				35D805D82C04B56B000D5F39 /* TravelModel.swift in Sources */,
 				35C311FD2C049A7200649CE8 /* TravelMainViewController.swift in Sources */,
 				35C311DE2C0486B300649CE8 /* SceneDelegate.swift in Sources */,
-				35461D012C07460800CEDF08 /* CityInfo.swift in Sources */,
 				35D805C72C04ADF6000D5F39 /* UIColor + Extension .swift in Sources */,
 				35C312072C04A31000649CE8 /* ProfileViewController.swift in Sources */,
 				35C311F92C049A5B00649CE8 /* CityViewController.swift in Sources */,
