@@ -24,12 +24,15 @@ class AdTitleCell: UITableViewCell {
         print(#function)
 
         adTitleLabel.font = .boldSystemFont(ofSize: 20)
-        adTitleLabel.backgroundColor = .gray
+        adTitleLabel.backgroundColor = .lightGray
+        adTitleLabel.layer.cornerRadius = 4
+        adTitleLabel.layer.masksToBounds = true
         
         adLabel.font = .systemFont(ofSize: 15)
         adLabel.backgroundColor = .lightGray.withAlphaComponent(0.2)
         adLabel.textAlignment = .center
         adLabel.layer.cornerRadius = 4
+        adLabel.layer.masksToBounds = true
     
     }
     

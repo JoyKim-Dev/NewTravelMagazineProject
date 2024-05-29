@@ -83,6 +83,13 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         
         filteredList = searchList
         restaurantTableView.reloadData()
+        dismissKeyboard(searchBar)
+    }
+    
+    // 서치바 키보드 내려가는 기능
+    
+    func dismissKeyboard(_ searchBar: UISearchBar) {
+        restaurantSearchBar.resignFirstResponder()
     }
     
     // 버튼 필터링 기능

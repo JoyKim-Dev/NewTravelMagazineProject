@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35461D012C07460800CEDF08 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D002C07460800CEDF08 /* CityInfo.swift */; };
+		35461D032C074BE500CEDF08 /* detailCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D022C074BE500CEDF08 /* detailCityViewController.swift */; };
+		35461D052C074BF500CEDF08 /* detailAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D042C074BF500CEDF08 /* detailAdViewController.swift */; };
+		35461D082C0763BA00CEDF08 /* FullImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35461D072C0763BA00CEDF08 /* FullImageCell.xib */; };
+		35461D092C0763BA00CEDF08 /* FullImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D062C0763BA00CEDF08 /* FullImageCell.swift */; };
 		35C311DC2C0486B300649CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311DB2C0486B300649CE8 /* AppDelegate.swift */; };
 		35C311DE2C0486B300649CE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311DD2C0486B300649CE8 /* SceneDelegate.swift */; };
 		35C311E02C0486B300649CE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311DF2C0486B300649CE8 /* ViewController.swift */; };
@@ -17,8 +22,8 @@
 		35C311F72C049A4D00649CE8 /* TravelMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C311F62C049A4D00649CE8 /* TravelMain.storyboard */; };
 		35C311F92C049A5B00649CE8 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311F82C049A5B00649CE8 /* CityViewController.swift */; };
 		35C311FD2C049A7200649CE8 /* TravelMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311FC2C049A7200649CE8 /* TravelMainViewController.swift */; };
-		35C312002C04A25E00649CE8 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311FF2C04A25E00649CE8 /* FavoriteViewController.swift */; };
-		35C312022C04A26900649CE8 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C312012C04A26900649CE8 /* Favorite.storyboard */; };
+		35C312002C04A25E00649CE8 /* PopularCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311FF2C04A25E00649CE8 /* PopularCityViewController.swift */; };
+		35C312022C04A26900649CE8 /* PopularCity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C312012C04A26900649CE8 /* PopularCity.storyboard */; };
 		35C312052C04A30200649CE8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C312042C04A30200649CE8 /* Profile.storyboard */; };
 		35C312072C04A31000649CE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C312062C04A31000649CE8 /* ProfileViewController.swift */; };
 		35D805C02C04AA0E000D5F39 /* Restaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D805BF2C04AA0E000D5F39 /* Restaurant.storyboard */; };
@@ -38,6 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35461D002C07460800CEDF08 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityInfo.swift; path = "../../../../Desktop/Swift coding/🩷sesac/sesac asset/CityInfo.swift"; sourceTree = "<group>"; };
+		35461D022C074BE500CEDF08 /* detailCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailCityViewController.swift; sourceTree = "<group>"; };
+		35461D042C074BF500CEDF08 /* detailAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailAdViewController.swift; sourceTree = "<group>"; };
+		35461D062C0763BA00CEDF08 /* FullImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageCell.swift; sourceTree = "<group>"; };
+		35461D072C0763BA00CEDF08 /* FullImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullImageCell.xib; sourceTree = "<group>"; };
 		35C311D82C0486B300649CE8 /* NewTravelMagazineProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTravelMagazineProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C311DB2C0486B300649CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35C311DD2C0486B300649CE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +60,8 @@
 		35C311F62C049A4D00649CE8 /* TravelMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelMain.storyboard; sourceTree = "<group>"; };
 		35C311F82C049A5B00649CE8 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		35C311FC2C049A7200649CE8 /* TravelMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelMainViewController.swift; sourceTree = "<group>"; };
-		35C311FF2C04A25E00649CE8 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
-		35C312012C04A26900649CE8 /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
+		35C311FF2C04A25E00649CE8 /* PopularCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCityViewController.swift; sourceTree = "<group>"; };
+		35C312012C04A26900649CE8 /* PopularCity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopularCity.storyboard; sourceTree = "<group>"; };
 		35C312042C04A30200649CE8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		35C312062C04A31000649CE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		35D805BF2C04AA0E000D5F39 /* Restaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurant.storyboard; sourceTree = "<group>"; };
@@ -84,6 +94,7 @@
 		350662DD2C05FA5F0043B2FC /* Dummy */ = {
 			isa = PBXGroup;
 			children = (
+				35461D002C07460800CEDF08 /* CityInfo.swift */,
 				35D805D72C04B56B000D5F39 /* MagazineInfo.swift */,
 				35D805D62C04B56B000D5F39 /* Restaurant.swift */,
 				35D805D52C04B56B000D5F39 /* TravelModel.swift */,
@@ -114,7 +125,7 @@
 				35C311EF2C04871200649CE8 /* TravelMain */,
 				35D805BE2C04A9EB000D5F39 /* Restaurant */,
 				35C311F12C04873500649CE8 /* City */,
-				35C311FE2C04A24F00649CE8 /* Favorite */,
+				35C311FE2C04A24F00649CE8 /* PopularCity */,
 				35C312032C04A2F300649CE8 /* Profile */,
 				35D805C52C04AD9E000D5F39 /* Extension */,
 				35D805CC2C04B1D4000D5F39 /* XIB Cell */,
@@ -143,17 +154,19 @@
 			children = (
 				35C311F22C049A3000649CE8 /* City.storyboard */,
 				35C311F82C049A5B00649CE8 /* CityViewController.swift */,
+				35461D022C074BE500CEDF08 /* detailCityViewController.swift */,
+				35461D042C074BF500CEDF08 /* detailAdViewController.swift */,
 			);
 			path = City;
 			sourceTree = "<group>";
 		};
-		35C311FE2C04A24F00649CE8 /* Favorite */ = {
+		35C311FE2C04A24F00649CE8 /* PopularCity */ = {
 			isa = PBXGroup;
 			children = (
-				35C312012C04A26900649CE8 /* Favorite.storyboard */,
-				35C311FF2C04A25E00649CE8 /* FavoriteViewController.swift */,
+				35C312012C04A26900649CE8 /* PopularCity.storyboard */,
+				35C311FF2C04A25E00649CE8 /* PopularCityViewController.swift */,
 			);
-			path = Favorite;
+			path = PopularCity;
 			sourceTree = "<group>";
 		};
 		35C312032C04A2F300649CE8 /* Profile */ = {
@@ -192,6 +205,8 @@
 				35D805CD2C04B20B000D5F39 /* SmallImageCell.swift */,
 				35D805D22C04B223000D5F39 /* AdTitleCell.xib */,
 				35D805D12C04B223000D5F39 /* AdTitleCell.swift */,
+				35461D072C0763BA00CEDF08 /* FullImageCell.xib */,
+				35461D062C0763BA00CEDF08 /* FullImageCell.swift */,
 			);
 			path = "XIB Cell";
 			sourceTree = "<group>";
@@ -263,11 +278,12 @@
 				35C311E52C0486B400649CE8 /* Assets.xcassets in Resources */,
 				35C311E82C0486B400649CE8 /* Base in Resources */,
 				35C312052C04A30200649CE8 /* Profile.storyboard in Resources */,
-				35C312022C04A26900649CE8 /* Favorite.storyboard in Resources */,
+				35C312022C04A26900649CE8 /* PopularCity.storyboard in Resources */,
 				35C311E32C0486B300649CE8 /* Base in Resources */,
 				35D805CA2C04B1C3000D5F39 /* BigImageCell.xib in Resources */,
 				35D805D32C04B223000D5F39 /* AdTitleCell.xib in Resources */,
 				35D805C02C04AA0E000D5F39 /* Restaurant.storyboard in Resources */,
+				35461D082C0763BA00CEDF08 /* FullImageCell.xib in Resources */,
 				35C311F72C049A4D00649CE8 /* TravelMain.storyboard in Resources */,
 				35C311F32C049A3000649CE8 /* City.storyboard in Resources */,
 				35D805CF2C04B20B000D5F39 /* SmallImageCell.xib in Resources */,
@@ -281,18 +297,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35461D092C0763BA00CEDF08 /* FullImageCell.swift in Sources */,
 				35C311E02C0486B300649CE8 /* ViewController.swift in Sources */,
 				35D805C42C04AD94000D5F39 /* UIViewController + Extension.swift in Sources */,
+				35461D032C074BE500CEDF08 /* detailCityViewController.swift in Sources */,
 				35D805C22C04AA1B000D5F39 /* RestaurantViewController.swift in Sources */,
 				35D805D42C04B223000D5F39 /* AdTitleCell.swift in Sources */,
+				35461D052C074BF500CEDF08 /* detailAdViewController.swift in Sources */,
 				35D805D02C04B20B000D5F39 /* SmallImageCell.swift in Sources */,
 				35D805DA2C04B56B000D5F39 /* MagazineInfo.swift in Sources */,
 				35D805D92C04B56B000D5F39 /* Restaurant.swift in Sources */,
 				35C311DC2C0486B300649CE8 /* AppDelegate.swift in Sources */,
-				35C312002C04A25E00649CE8 /* FavoriteViewController.swift in Sources */,
+				35C312002C04A25E00649CE8 /* PopularCityViewController.swift in Sources */,
 				35D805D82C04B56B000D5F39 /* TravelModel.swift in Sources */,
 				35C311FD2C049A7200649CE8 /* TravelMainViewController.swift in Sources */,
 				35C311DE2C0486B300649CE8 /* SceneDelegate.swift in Sources */,
+				35461D012C07460800CEDF08 /* CityInfo.swift in Sources */,
 				35D805C72C04ADF6000D5F39 /* UIColor + Extension .swift in Sources */,
 				35C312072C04A31000649CE8 /* ProfileViewController.swift in Sources */,
 				35C311F92C049A5B00649CE8 /* CityViewController.swift in Sources */,

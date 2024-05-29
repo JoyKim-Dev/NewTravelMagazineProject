@@ -35,7 +35,7 @@ class BigImageCell: UITableViewCell {
         mainImageView.layer.cornerRadius = 6
     }
     
-    func configureCell(data:Magazine) {
+    func configureCell(data: Magazine) {
         titleLabel.text = data.title
         subtitleLabel.text = data.subtitle
         
@@ -44,8 +44,6 @@ class BigImageCell: UITableViewCell {
         let heartImage = UIImage(systemName: heartName)
         likeBtn.setImage(heartImage , for: .normal)
         likeBtn.tintColor = .black
-        
-        
         
         let url = URL(string: data.image)
         mainImageView.kf.setImage(with: url, placeholder: UIImage(systemName:"network.slash"))
@@ -59,4 +57,5 @@ class BigImageCell: UITableViewCell {
         dateLabel.textColor = .gray
         
     }
+    
 }

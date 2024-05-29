@@ -3,16 +3,16 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--즐겨찾기-->
+        <!--인기도시-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="Favorite" id="Y6W-OH-hqX" customClass="FavoriteViewController" customModule="NewTravelMagazineProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopularCity" id="Y6W-OH-hqX" customClass="PopularCityViewController" customModule="NewTravelMagazineProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,28 +25,44 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-BI-9ae">
-                                <rect key="frame" x="0.0" y="115" width="393" height="654"/>
+                                <rect key="frame" x="0.0" y="162" width="393" height="607"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I2u-Em-lb9">
+                                <rect key="frame" x="12" y="123" width="369" height="32"/>
+                                <segments>
+                                    <segment title="전체"/>
+                                    <segment title="국내"/>
+                                    <segment title="해외"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="I2u-Em-lb9" firstAttribute="top" secondItem="Sv6-97-nba" secondAttribute="bottom" constant="8" id="3dJ-Zq-ed3"/>
+                            <constraint firstItem="I2u-Em-lb9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="4wq-Fa-Opd"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CNS-BI-9ae" secondAttribute="trailing" id="5KX-Bk-FkR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="CNS-BI-9ae" secondAttribute="bottom" id="DKE-bK-xlg"/>
                             <constraint firstItem="Sv6-97-nba" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="GMj-dJ-R4q"/>
                             <constraint firstItem="Sv6-97-nba" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Igb-jC-hOM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="I2u-Em-lb9" secondAttribute="trailing" constant="12" id="LmX-q6-pgz"/>
+                            <constraint firstItem="I2u-Em-lb9" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Ntu-Fy-4bL"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Sv6-97-nba" secondAttribute="trailing" id="O3n-aL-drI"/>
+                            <constraint firstItem="CNS-BI-9ae" firstAttribute="top" secondItem="I2u-Em-lb9" secondAttribute="bottom" constant="8" id="hl7-Hf-tO6"/>
                             <constraint firstItem="CNS-BI-9ae" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kFQ-iN-dsf"/>
-                            <constraint firstItem="CNS-BI-9ae" firstAttribute="top" secondItem="Sv6-97-nba" secondAttribute="bottom" id="nJc-lG-pJC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="즐겨찾기" image="heart.fill" catalog="system" id="ljU-aq-cB5"/>
+                    <tabBarItem key="tabBarItem" title="인기도시" image="heart.fill" catalog="system" id="ljU-aq-cB5"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="popularCitySearchBar" destination="Sv6-97-nba" id="kwy-AA-peg"/>
+                        <outlet property="popularCityTableView" destination="CNS-BI-9ae" id="gpP-hf-maj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-27"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

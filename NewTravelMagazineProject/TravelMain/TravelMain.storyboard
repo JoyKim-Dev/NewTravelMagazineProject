@@ -43,8 +43,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="MAGAZINE" id="j0y-CI-Puy"/>
                     <connections>
-                        <outlet property="travelSearchBar" destination="9Bc-2c-NSG" id="m84-wk-mWr"/>
-                        <outlet property="travelTableView" destination="gvQ-EQ-DsZ" id="edu-1L-rWr"/>
+                        <outlet property="travelSearchBar" destination="9Bc-2c-NSG" id="8NS-um-yVd"/>
+                        <outlet property="travelTableView" destination="gvQ-EQ-DsZ" id="iJ6-f4-C6v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="4615" y="570"/>
         </scene>
-        <!--Favorite-->
+        <!--PopularCity-->
         <scene sceneID="pIH-Xq-LFl">
             <objects>
-                <viewControllerPlaceholder storyboardName="Favorite" id="2Yq-zS-ijT" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="PopularCity" id="2Yq-zS-ijT" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="sqe-1f-LaH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8o-ZC-s4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,7 +168,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5t2-1r-32U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4067.9389312977096" y="831.69014084507046"/>
+            <point key="canvasLocation" x="3095" y="771"/>
         </scene>
         <!--Item-->
         <scene sceneID="OHT-01-JFB">
