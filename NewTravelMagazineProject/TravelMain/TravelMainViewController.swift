@@ -53,7 +53,7 @@ extension TravelMainViewController {
     
     @objc func likeBtnTapped(sender: UIButton) {
         
-        list[sender.tag].like.toggle()
+        filteredList[sender.tag].like.toggle()
         travelTableView.reloadRows(at:[IndexPath(row: sender.tag, section: 0)], with: .automatic)
         
     }
@@ -94,7 +94,6 @@ extension TravelMainViewController:  UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         travelSearchBar.showsCancelButton = true
-        travelSearchBar.becomeFirstResponder()
     }
     
     // 서치바 검색 기능: 검색한 내용이 레이블 내용에 포함되어 있는지 확인하고 띄워주기.
@@ -109,18 +108,19 @@ extension TravelMainViewController:  UISearchBarDelegate {
             }
         }
         filteredList = searchList
-        travelTableView.reloadData()
-    }
-    
- // 캔슬 버튼 클릭되면 텍스트 다 지우고, 리스트 전체보기로 전환
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         travelSearchBar.resignFirstResponder()
-        travelSearchBar.text = ""
-        travelSearchBar.showsCancelButton = false
-        filteredList = list
         travelTableView.reloadData()
     }
 
     
+ // 캔슬 버튼 클릭되면 텍스트 다 지우고, 리스트 전체보기로 전환 -> 두번 눌러야 실행되는 이유?!
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        travelSearchBar.text = ""
+        travelSearchBar.showsCancelButton = false
+        filteredList = list
+        travelTableView.reloadData()
+        travelSearchBar.resignFirstResponder()
+    }
+
 }
 
