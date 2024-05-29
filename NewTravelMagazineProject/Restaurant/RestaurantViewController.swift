@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class RestaurantViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class RestaurantViewController: UIViewController {
     
     // 테이블뷰컨 사용하지 않기 때문에 테이블뷰 연결해주기
     @IBOutlet var restaurantSearchBar: UISearchBar!
@@ -26,6 +26,16 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTableView()
+        configureUI()
+        filterBtnSearch()
+    }
+}
+
+// MARK: UI설정
+extension RestaurantViewController {
+    
+    func configureTableView() {
         //extension 활용
         configureView("RESTAURANT")
         restaurantSearchBar.placeholder = "먹고 싶은 메뉴를 검색해보세요"
@@ -37,18 +47,12 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         // xib 셀 연결
         let xib = UINib(nibName: SmallImageCell.identifier, bundle: nil)
         restaurantTableView.register(xib, forCellReuseIdentifier: SmallImageCell.identifier)
-        
-        configureUI()
-        filterBtnSearch()
-        
     }
     
     func configureUI() {
-        
         designFilterBtnUI()
         filterBtnLabel.font = .boldSystemFont(ofSize: 16)
         filterBtnLabel.text = "추천검색어"
-        
     }
     
     // 버튼 UI 설정
@@ -65,31 +69,6 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
             btn.layer.borderColor = UIColor.systemPink.cgColor
             btn.layer.cornerRadius = 4
         }
-    }
-    
-    // 서치바 검색 기능
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-        var searchList: [Restaurant] = []
-        
-        for i in list {
-            
-            if i.name.contains(searchBar.text!) ||
-                i.category.contains(searchBar.text!) {
-                
-                searchList.append(i)
-            }
-        }
-        
-        filteredList = searchList
-        restaurantTableView.reloadData()
-        dismissKeyboard(searchBar)
-    }
-    
-    // 서치바 키보드 내려가는 기능
-    
-    func dismissKeyboard(_ searchBar: UISearchBar) {
-        restaurantSearchBar.resignFirstResponder()
     }
     
     // 버튼 필터링 기능
@@ -131,6 +110,7 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         restaurantTableView.reloadData()
     }
+    
     // 좋아요 버튼 기능 함수
     @objc func likeBtnTapped(sender: UIButton) {
         
@@ -138,7 +118,11 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         restaurantTableView.reloadRows(at:[IndexPath(row: sender.tag, section: 0)], with: .automatic)
         
     }
-    
+}
+
+
+// MARK: tableView
+extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredList.count
@@ -157,3 +141,33 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
     }
 }
 
+
+// MARK: searchBar
+
+extension RestaurantViewController:UISearchBarDelegate {
+    
+    // 서치바 검색 기능
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        var searchList: [Restaurant] = []
+        
+        for i in list {
+            
+            if i.name.contains(searchBar.text!) ||
+                i.category.contains(searchBar.text!) {
+                
+                searchList.append(i)
+            }
+        }
+        
+        filteredList = searchList
+        restaurantTableView.reloadData()
+        dismissKeyboard(searchBar)
+    }
+    
+    // 서치바 키보드 내려가는 기능
+    
+    func dismissKeyboard(_ searchBar: UISearchBar) {
+        restaurantSearchBar.resignFirstResponder()
+    }
+}
