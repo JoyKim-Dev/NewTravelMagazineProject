@@ -23,7 +23,7 @@ class detailCityViewController: UIViewController {
     // 3. 데이터를 받아오기
     
     var data: Travel?
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

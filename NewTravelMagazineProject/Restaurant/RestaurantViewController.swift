@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import MapKit
 
 class RestaurantViewController: UIViewController {
     
@@ -22,6 +23,11 @@ class RestaurantViewController: UIViewController {
     //  RestaurantList의 property에 static 키워드를 붙여줘서 인스턴스 생성 없이도 접근 가능.
     var list = RestaurantList.restaurantArray
     var filteredList: [Restaurant] = []
+    
+    // 지역 이름 보여줄 
+    let picker = UIPickerView()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,12 +53,18 @@ extension RestaurantViewController {
         // xib 셀 연결
         let xib = UINib(nibName: SmallImageCell.identifier, bundle: nil)
         restaurantTableView.register(xib, forCellReuseIdentifier: SmallImageCell.identifier)
+        
     }
     
     func configureUI() {
         designFilterBtnUI()
         filterBtnLabel.font = .boldSystemFont(ofSize: 16)
         filterBtnLabel.text = "추천검색어"
+        
+        // 네비게이션 바버튼 추가 - 지도구현
+        let map = UIBarButtonItem(title: "지도보기", style: .plain, target: self, action: #selector(mapBtnTapped))
+        navigationItem.leftBarButtonItem = map
+        
     }
     
     // 버튼 UI 설정
@@ -118,6 +130,14 @@ extension RestaurantViewController {
         restaurantTableView.reloadRows(at:[IndexPath(row: sender.tag, section: 0)], with: .automatic)
         
     }
+    
+    // 바버튼 지도보기 기능
+    @objc func mapBtnTapped() {
+        // 셀 클릭하면 전환될 화면 연결
+        let vc = storyboard?.instantiateViewController(withIdentifier: MapViewController.identifier) as! MapViewController
+        present(vc, animated: true)
+        
+    }
 }
 
 
@@ -171,3 +191,4 @@ extension RestaurantViewController:UISearchBarDelegate {
         restaurantSearchBar.resignFirstResponder()
     }
 }
+
