@@ -95,17 +95,19 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
  
     // 셀 클릭 화면전환
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let data = list[indexPath.row]
+        
         guard let ad = data.ad else {
             return
         }
         
         if ad {
-            // 스토리보드 연결
-            let sb = UIStoryboard(name: "City", bundle: nil)
+            // 스토리보드 연결 - cityViewController는 이미 City storyboard와 연결되어 있고, 화면 전환할 뷰컨씬은 동일한 스토리보드에 들어 잇어서 아래 코드 변경.
+//            let sb = UIStoryboard(name: "City", bundle: nil)
             
             // 스토리보드 내부에서 보여줄 화면 지정
-            let vc = sb.instantiateViewController(withIdentifier: detailAdViewController.identifier) as! detailAdViewController
+            let vc = storyboard?.instantiateViewController(withIdentifier: detailAdViewController.identifier) as! detailAdViewController
             
             // 백버튼 커스텀 -  주의! 네비게이션 컨트롤러 다시 연결하기 전에 진행해야함.
             // 네비게이션 백버튼 타이틀 넣어 생성하고 누르면 내려가게 액션 추가.
@@ -118,16 +120,24 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
             nav.modalPresentationStyle = .fullScreen
 //            nav.modalTransitionStyle = .flipHorizontal
            
+            // 다음 화면에 전달해줄 데이터 설정
+            vc.data = data
+            
             //네비게이션바 있는 present 모달 방식으로 띄워주기
             present(nav, animated: true)
 
         } else {
             
             // 스토리보드 연결
-            let sb = UIStoryboard(name: "City", bundle: nil)
+//            let sb = UIStoryboard(name: "City", bundle: nil)
             
             // 스토리보드 내부에서 보여줄 화면 지정
-            let vc = sb.instantiateViewController(withIdentifier: detailCityViewController.identifier) as! detailCityViewController
+            let vc = storyboard?.instantiateViewController(withIdentifier: detailCityViewController.identifier) as! detailCityViewController
+            
+            // 다음 화면에 전달해줄 데이터 설정
+            
+            vc.data = data
+            
             // 네비게이션바 있는 show 푸시 스타일로 띄워주기
             navigationController?.pushViewController(vc, animated: true)
             
