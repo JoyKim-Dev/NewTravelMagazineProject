@@ -11,7 +11,7 @@ import Kingfisher
 class SmallImageCell: UITableViewCell {
     
     // 셀 identifier 타이포를 줄이기 위해 static property로 생성하여 재사용
-    static let identifier = "SmallImageCell"
+    //static let identifier = "SmallImageCell"
     
     @IBOutlet var mainImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!

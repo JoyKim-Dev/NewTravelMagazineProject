@@ -10,7 +10,7 @@ import Kingfisher
 
 class FullImageCell: UITableViewCell {
     
-    static let identifier = "FullImageCell"
+    //static let identifier = "FullImageCell"
     
     @IBOutlet var mainImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!

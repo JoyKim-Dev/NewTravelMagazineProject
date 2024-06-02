@@ -11,7 +11,7 @@ import MapKit
 class MapViewController: UIViewController {
     @IBOutlet var mapTextField: UITextField!
     @IBOutlet var mapView: MKMapView!
-    static let identifier = "MapViewController"
+   // static let identifier = "MapViewController"
     
     var category = ["한식", "중식", "일식", "양식", "경양식", "분식", "전체보기"]
     var list = RestaurantList.restaurantArray

@@ -10,7 +10,7 @@ import UIKit
 class AdTitleCell: UITableViewCell {
 
     // 셀 identifier 타이포를 줄이기 위해 static property로 생성하여 재사용
-    static let identifier = "AdTitleCell"
+   // static let identifier = "AdTitleCell"
     
     @IBOutlet var adTitleLabel: UILabel!
     @IBOutlet var adLabel: UILabel!

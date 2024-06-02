@@ -11,7 +11,7 @@ class detailAdViewController: UIViewController {
 
     @IBOutlet var detailAdLabel: UILabel!
     
-    static let identifier = "detailAdViewController"
+    //static let identifier = "detailAdViewController"
     
     var data: Travel?
     

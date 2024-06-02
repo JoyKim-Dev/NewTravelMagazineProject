@@ -16,7 +16,7 @@ class detailCityViewController: UIViewController {
     @IBOutlet var cityDetailDescriptionLabel: UILabel!
     @IBOutlet var detailCitySaveBtn: UIButton!
     
-    static let identifier = "detailCityViewController"
+    //static let identifier = "detailCityViewController"
     
     // Pass Data 1. 데이터를 받을 공간(property) 생성
     // 2. 데이터를 받아올 이전 화면에서 데이터 설정
