@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="828" y="541"/>
         </scene>
-        <!--Profile-->
+        <!--Chat-->
         <scene sceneID="ztR-wT-wYq">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="vkc-QZ-XUs" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Chat" id="vkc-QZ-XUs" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="bfr-lP-eCT"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5O-A3-AhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

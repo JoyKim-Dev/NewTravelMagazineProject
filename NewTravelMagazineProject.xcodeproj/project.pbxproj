@@ -13,6 +13,14 @@
 		35461D082C0763BA00CEDF08 /* FullImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35461D072C0763BA00CEDF08 /* FullImageCell.xib */; };
 		35461D092C0763BA00CEDF08 /* FullImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D062C0763BA00CEDF08 /* FullImageCell.swift */; };
 		357EB7112C0CBCA700D38EA0 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357EB7102C0CBCA700D38EA0 /* ReuseIdentifierProtocol.swift */; };
+		35A894E92C0DEE2E00B74494 /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A894E82C0DEE2E00B74494 /* ChattingData.swift */; };
+		35A894EB2C0DF22800B74494 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A894EA2C0DF22800B74494 /* ChatRoomViewController.swift */; };
+		35A894EE2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A894EC2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.swift */; };
+		35A894EF2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A894ED2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.xib */; };
+		35A894F22C0DF66F00B74494 /* ChatRoomMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A894F02C0DF66F00B74494 /* ChatRoomMessageTableViewCell.swift */; };
+		35A894F32C0DF66F00B74494 /* ChatRoomMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A894F12C0DF66F00B74494 /* ChatRoomMessageTableViewCell.xib */; };
+		35A894F62C0DF6CC00B74494 /* RecentChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A894F42C0DF6CC00B74494 /* RecentChatMessageTableViewCell.swift */; };
+		35A894F72C0DF6CC00B74494 /* RecentChatMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A894F52C0DF6CC00B74494 /* RecentChatMessageTableViewCell.xib */; };
 		35C311DC2C0486B300649CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311DB2C0486B300649CE8 /* AppDelegate.swift */; };
 		35C311DE2C0486B300649CE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311DD2C0486B300649CE8 /* SceneDelegate.swift */; };
 		35C311E02C0486B300649CE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311DF2C0486B300649CE8 /* ViewController.swift */; };
@@ -25,8 +33,8 @@
 		35C311FD2C049A7200649CE8 /* TravelMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311FC2C049A7200649CE8 /* TravelMainViewController.swift */; };
 		35C312002C04A25E00649CE8 /* PopularCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C311FF2C04A25E00649CE8 /* PopularCityViewController.swift */; };
 		35C312022C04A26900649CE8 /* PopularCity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C312012C04A26900649CE8 /* PopularCity.storyboard */; };
-		35C312052C04A30200649CE8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C312042C04A30200649CE8 /* Profile.storyboard */; };
-		35C312072C04A31000649CE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C312062C04A31000649CE8 /* ProfileViewController.swift */; };
+		35C312052C04A30200649CE8 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C312042C04A30200649CE8 /* Chat.storyboard */; };
+		35C312072C04A31000649CE8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C312062C04A31000649CE8 /* ChatViewController.swift */; };
 		35D805C02C04AA0E000D5F39 /* Restaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D805BF2C04AA0E000D5F39 /* Restaurant.storyboard */; };
 		35D805C22C04AA1B000D5F39 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D805C12C04AA1B000D5F39 /* RestaurantViewController.swift */; };
 		35D805C42C04AD94000D5F39 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D805C32C04AD94000D5F39 /* UIViewController + Extension.swift */; };
@@ -51,6 +59,14 @@
 		35461D062C0763BA00CEDF08 /* FullImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageCell.swift; sourceTree = "<group>"; };
 		35461D072C0763BA00CEDF08 /* FullImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullImageCell.xib; sourceTree = "<group>"; };
 		357EB7102C0CBCA700D38EA0 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		35A894E82C0DEE2E00B74494 /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
+		35A894EA2C0DF22800B74494 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		35A894EC2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomMessageWithImageTableViewCell.swift; sourceTree = "<group>"; };
+		35A894ED2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomMessageWithImageTableViewCell.xib; sourceTree = "<group>"; };
+		35A894F02C0DF66F00B74494 /* ChatRoomMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomMessageTableViewCell.swift; sourceTree = "<group>"; };
+		35A894F12C0DF66F00B74494 /* ChatRoomMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomMessageTableViewCell.xib; sourceTree = "<group>"; };
+		35A894F42C0DF6CC00B74494 /* RecentChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatMessageTableViewCell.swift; sourceTree = "<group>"; };
+		35A894F52C0DF6CC00B74494 /* RecentChatMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentChatMessageTableViewCell.xib; sourceTree = "<group>"; };
 		35C311D82C0486B300649CE8 /* NewTravelMagazineProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTravelMagazineProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C311DB2C0486B300649CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35C311DD2C0486B300649CE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,8 +81,8 @@
 		35C311FC2C049A7200649CE8 /* TravelMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelMainViewController.swift; sourceTree = "<group>"; };
 		35C311FF2C04A25E00649CE8 /* PopularCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCityViewController.swift; sourceTree = "<group>"; };
 		35C312012C04A26900649CE8 /* PopularCity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopularCity.storyboard; sourceTree = "<group>"; };
-		35C312042C04A30200649CE8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		35C312062C04A31000649CE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		35C312042C04A30200649CE8 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		35C312062C04A31000649CE8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		35D805BF2C04AA0E000D5F39 /* Restaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurant.storyboard; sourceTree = "<group>"; };
 		35D805C12C04AA1B000D5F39 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		35D805C32C04AD94000D5F39 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
@@ -98,6 +114,7 @@
 		350662DD2C05FA5F0043B2FC /* Dummy */ = {
 			isa = PBXGroup;
 			children = (
+				35A894E82C0DEE2E00B74494 /* ChattingData.swift */,
 				35FF6D9E2C078B83009C3157 /* CityInfo.swift */,
 				35D805D72C04B56B000D5F39 /* MagazineInfo.swift */,
 				35D805D62C04B56B000D5F39 /* Restaurant.swift */,
@@ -131,7 +148,7 @@
 				35D805BE2C04A9EB000D5F39 /* Restaurant */,
 				35C311F12C04873500649CE8 /* City */,
 				35C311FE2C04A24F00649CE8 /* PopularCity */,
-				35C312032C04A2F300649CE8 /* Profile */,
+				35C312032C04A2F300649CE8 /* Chat */,
 				35D805C52C04AD9E000D5F39 /* Extension */,
 				35D805CC2C04B1D4000D5F39 /* XIB Cell */,
 				35C311DB2C0486B300649CE8 /* AppDelegate.swift */,
@@ -174,13 +191,14 @@
 			path = PopularCity;
 			sourceTree = "<group>";
 		};
-		35C312032C04A2F300649CE8 /* Profile */ = {
+		35C312032C04A2F300649CE8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				35C312042C04A30200649CE8 /* Profile.storyboard */,
-				35C312062C04A31000649CE8 /* ProfileViewController.swift */,
+				35C312042C04A30200649CE8 /* Chat.storyboard */,
+				35C312062C04A31000649CE8 /* ChatViewController.swift */,
+				35A894EA2C0DF22800B74494 /* ChatRoomViewController.swift */,
 			);
-			path = Profile;
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		35D805BE2C04A9EB000D5F39 /* Restaurant */ = {
@@ -213,6 +231,12 @@
 				35D805D12C04B223000D5F39 /* AdTitleCell.swift */,
 				35461D072C0763BA00CEDF08 /* FullImageCell.xib */,
 				35461D062C0763BA00CEDF08 /* FullImageCell.swift */,
+				35A894EC2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.swift */,
+				35A894ED2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.xib */,
+				35A894F02C0DF66F00B74494 /* ChatRoomMessageTableViewCell.swift */,
+				35A894F12C0DF66F00B74494 /* ChatRoomMessageTableViewCell.xib */,
+				35A894F42C0DF6CC00B74494 /* RecentChatMessageTableViewCell.swift */,
+				35A894F52C0DF6CC00B74494 /* RecentChatMessageTableViewCell.xib */,
 			);
 			path = "XIB Cell";
 			sourceTree = "<group>";
@@ -282,14 +306,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				35C311E52C0486B400649CE8 /* Assets.xcassets in Resources */,
+				35A894F72C0DF6CC00B74494 /* RecentChatMessageTableViewCell.xib in Resources */,
 				35C311E82C0486B400649CE8 /* Base in Resources */,
-				35C312052C04A30200649CE8 /* Profile.storyboard in Resources */,
+				35A894F32C0DF66F00B74494 /* ChatRoomMessageTableViewCell.xib in Resources */,
+				35C312052C04A30200649CE8 /* Chat.storyboard in Resources */,
 				35C312022C04A26900649CE8 /* PopularCity.storyboard in Resources */,
 				35C311E32C0486B300649CE8 /* Base in Resources */,
 				35D805CA2C04B1C3000D5F39 /* BigImageCell.xib in Resources */,
 				35D805D32C04B223000D5F39 /* AdTitleCell.xib in Resources */,
 				35D805C02C04AA0E000D5F39 /* Restaurant.storyboard in Resources */,
 				35461D082C0763BA00CEDF08 /* FullImageCell.xib in Resources */,
+				35A894EF2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.xib in Resources */,
 				35C311F72C049A4D00649CE8 /* TravelMain.storyboard in Resources */,
 				35C311F32C049A3000649CE8 /* City.storyboard in Resources */,
 				35D805CF2C04B20B000D5F39 /* SmallImageCell.xib in Resources */,
@@ -304,6 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				35461D092C0763BA00CEDF08 /* FullImageCell.swift in Sources */,
+				35A894E92C0DEE2E00B74494 /* ChattingData.swift in Sources */,
+				35A894F22C0DF66F00B74494 /* ChatRoomMessageTableViewCell.swift in Sources */,
 				35C311E02C0486B300649CE8 /* ViewController.swift in Sources */,
 				35D805C42C04AD94000D5F39 /* UIViewController + Extension.swift in Sources */,
 				35461D032C074BE500CEDF08 /* detailCityViewController.swift in Sources */,
@@ -313,6 +342,8 @@
 				357EB7112C0CBCA700D38EA0 /* ReuseIdentifierProtocol.swift in Sources */,
 				35461D052C074BF500CEDF08 /* detailAdViewController.swift in Sources */,
 				35D805D02C04B20B000D5F39 /* SmallImageCell.swift in Sources */,
+				35A894EB2C0DF22800B74494 /* ChatRoomViewController.swift in Sources */,
+				35A894F62C0DF6CC00B74494 /* RecentChatMessageTableViewCell.swift in Sources */,
 				35D805DA2C04B56B000D5F39 /* MagazineInfo.swift in Sources */,
 				35D805D92C04B56B000D5F39 /* Restaurant.swift in Sources */,
 				35C311DC2C0486B300649CE8 /* AppDelegate.swift in Sources */,
@@ -321,7 +352,8 @@
 				35C311FD2C049A7200649CE8 /* TravelMainViewController.swift in Sources */,
 				35C311DE2C0486B300649CE8 /* SceneDelegate.swift in Sources */,
 				35D805C72C04ADF6000D5F39 /* UIColor + Extension .swift in Sources */,
-				35C312072C04A31000649CE8 /* ProfileViewController.swift in Sources */,
+				35C312072C04A31000649CE8 /* ChatViewController.swift in Sources */,
+				35A894EE2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.swift in Sources */,
 				35367D052C0876250055628F /* MapViewController.swift in Sources */,
 				35C311F92C049A5B00649CE8 /* CityViewController.swift in Sources */,
 				35D805CB2C04B1C3000D5F39 /* BigImageCell.swift in Sources */,
