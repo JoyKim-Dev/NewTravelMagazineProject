@@ -19,7 +19,7 @@ class MapViewController: UIViewController {
     // 위치매니저: 위치에 대한 대부분을 담당함(notification center처럼)
     let locationManager = CLLocationManager()
     
-    var category = ["한식", "중식", "일식", "양식", "경양식", "분식", "전체보기"]
+    var category = ["전체보기","한식", "중식", "일식", "양식", "경양식", "분식"]
     var list = RestaurantList.restaurantArray
     let defaultRegion = CLLocationCoordinate2D(latitude: 37.5176577, longitude: 126.8864088)
     let picker = UIPickerView()
@@ -54,6 +54,7 @@ extension MapViewController {
         
         // delegate 처리
         picker.delegate = self
+        picker.dataSource = self
         locationManager.delegate = self
         
         // pickerView를 inpuView에 연결
@@ -82,11 +83,16 @@ extension MapViewController {
         
         mapView.setRegion(userRegion, animated: true)
         
+        addAnotation(for: list)
         
-        // 식당 맵뷰 annotation 처리
-        var annotationArray: [MKAnnotation] = []
+    }
+    func addAnotation(for restaurantArray: [Restaurant]) {
         
-        for i in list {
+        var annotationList:[MKPointAnnotation] = []
+        //일단 기존 것 있다면 전체 삭제
+        mapView.removeAnnotations(mapView.annotations)
+  
+        for i in restaurantArray {
             // 핀 생성
             let annotation = MKPointAnnotation()
             // 핀 위치 설정
@@ -94,13 +100,10 @@ extension MapViewController {
             // 핀 타이틀 설정
             annotation.title = i.name
             // 핀 배열에 추가
-            annotationArray.append(annotation)
+            annotationList.append(annotation)
             print("Adding annotation for: \(i.name)")
         }
-        // 맵뷰에 핀 추가
-        mapView.addAnnotations(annotationArray)
-        
-        // print("Annotations added: \(annotationArray)")
+        mapView.addAnnotations(annotationList)
     }
     
     // 1. iOS 시스템 권한 상태 확인 - yes? 위치접근요청 - no? 시스템 권한 설정 alert
@@ -199,12 +202,13 @@ extension MapViewController {
 
 // 피커뷰 설정
 extension MapViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 7
+        return category.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -215,6 +219,18 @@ extension MapViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //전체 annotation 보이다가 특정 row 선택하면 그 카테고리에 맞는 annotation만 보이게 구현 예정
         mapTextField.resignFirstResponder()
+        var categoryList:[Restaurant] = []
+        
+        if category[row] == "전체보기" {
+            addAnotation(for: list)
+        } else {
+            for i in list {
+                if i.category == category[row] {
+                    categoryList.append(i)
+                }
+            }
+            addAnotation(for: categoryList)
+        }
     }
 }
 // location delegate 프로토콜
@@ -229,6 +245,8 @@ extension MapViewController: CLLocationManagerDelegate {
             print(coordinate)
             mapAnnotation(center: coordinate)
         }
+        
+        locationManager.stopUpdatingLocation()
     }
     
     // 위치 가져오기 실패한 경우
