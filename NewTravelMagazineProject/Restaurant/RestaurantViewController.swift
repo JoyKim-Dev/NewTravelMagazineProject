@@ -134,8 +134,10 @@ extension RestaurantViewController {
     @objc func mapBtnTapped() {
         // 셀 클릭하면 전환될 화면 연결
         let vc = storyboard?.instantiateViewController(withIdentifier: MapViewController.identifier) as! MapViewController
-        present(vc, animated: true)
         
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
     }
 }
 

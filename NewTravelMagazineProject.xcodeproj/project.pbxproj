@@ -49,6 +49,8 @@
 		35D805D92C04B56B000D5F39 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D805D62C04B56B000D5F39 /* Restaurant.swift */; };
 		35D805DA2C04B56B000D5F39 /* MagazineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D805D72C04B56B000D5F39 /* MagazineInfo.swift */; };
 		35D805DD2C04BED6000D5F39 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 35D805DC2C04BED6000D5F39 /* Kingfisher */; };
+		35F8B2F12C22CB2B00D9291A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 35F8B2F02C22CB2B00D9291A /* SnapKit */; };
+		35F8B2F42C22CB4100D9291A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35F8B2F32C22CB4100D9291A /* Alamofire */; };
 		35FF6D9F2C078B83009C3157 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FF6D9E2C078B83009C3157 /* CityInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F8B2F42C22CB4100D9291A /* Alamofire in Frameworks */,
 				35D805DD2C04BED6000D5F39 /* Kingfisher in Frameworks */,
+				35F8B2F12C22CB2B00D9291A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +263,8 @@
 			name = NewTravelMagazineProject;
 			packageProductDependencies = (
 				35D805DC2C04BED6000D5F39 /* Kingfisher */,
+				35F8B2F02C22CB2B00D9291A /* SnapKit */,
+				35F8B2F32C22CB4100D9291A /* Alamofire */,
 			);
 			productName = NewTravelMagazineProject;
 			productReference = 35C311D82C0486B300649CE8 /* NewTravelMagazineProject.app */;
@@ -290,6 +296,8 @@
 			mainGroup = 35C311CF2C0486B300649CE8;
 			packageReferences = (
 				35D805DB2C04BED6000D5F39 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				35F8B2EF2C22CB2B00D9291A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				35F8B2F22C22CB4100D9291A /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 35C311D92C0486B300649CE8 /* Products */;
 			projectDirPath = "";
@@ -508,6 +516,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3724U2GB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewTravelMagazineProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -540,6 +549,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3724U2GB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewTravelMagazineProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -597,6 +607,22 @@
 				minimumVersion = 7.11.0;
 			};
 		};
+		35F8B2EF2C22CB2B00D9291A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		35F8B2F22C22CB4100D9291A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -604,6 +630,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 35D805DB2C04BED6000D5F39 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		35F8B2F02C22CB2B00D9291A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35F8B2EF2C22CB2B00D9291A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		35F8B2F32C22CB4100D9291A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35F8B2F22C22CB4100D9291A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
