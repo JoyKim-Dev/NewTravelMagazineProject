@@ -13,6 +13,8 @@
 		35461D082C0763BA00CEDF08 /* FullImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35461D072C0763BA00CEDF08 /* FullImageCell.xib */; };
 		35461D092C0763BA00CEDF08 /* FullImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35461D062C0763BA00CEDF08 /* FullImageCell.swift */; };
 		357EB7112C0CBCA700D38EA0 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357EB7102C0CBCA700D38EA0 /* ReuseIdentifierProtocol.swift */; };
+		3590F25B2C32A6B700652DBA /* NasaUrlSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3590F25A2C32A6B700652DBA /* NasaUrlSessionVC.swift */; };
+		3590F25D2C32A6E000652DBA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3590F25C2C32A6E000652DBA /* BaseViewController.swift */; };
 		35A894E92C0DEE2E00B74494 /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A894E82C0DEE2E00B74494 /* ChattingData.swift */; };
 		35A894EB2C0DF22800B74494 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A894EA2C0DF22800B74494 /* ChatRoomViewController.swift */; };
 		35A894EE2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A894EC2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.swift */; };
@@ -61,6 +63,8 @@
 		35461D062C0763BA00CEDF08 /* FullImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageCell.swift; sourceTree = "<group>"; };
 		35461D072C0763BA00CEDF08 /* FullImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullImageCell.xib; sourceTree = "<group>"; };
 		357EB7102C0CBCA700D38EA0 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		3590F25A2C32A6B700652DBA /* NasaUrlSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaUrlSessionVC.swift; sourceTree = "<group>"; };
+		3590F25C2C32A6E000652DBA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		35A894E82C0DEE2E00B74494 /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
 		35A894EA2C0DF22800B74494 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		35A894EC2C0DF65F00B74494 /* ChatRoomMessageWithImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomMessageWithImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -127,6 +131,15 @@
 			path = Dummy;
 			sourceTree = "<group>";
 		};
+		3590F2592C32A66E00652DBA /* NASAPractice */ = {
+			isa = PBXGroup;
+			children = (
+				3590F25A2C32A6B700652DBA /* NasaUrlSessionVC.swift */,
+				3590F25C2C32A6E000652DBA /* BaseViewController.swift */,
+			);
+			path = NASAPractice;
+			sourceTree = "<group>";
+		};
 		35C311CF2C0486B300649CE8 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +159,7 @@
 		35C311DA2C0486B300649CE8 /* NewTravelMagazineProject */ = {
 			isa = PBXGroup;
 			children = (
+				3590F2592C32A66E00652DBA /* NASAPractice */,
 				357EB7102C0CBCA700D38EA0 /* ReuseIdentifierProtocol.swift */,
 				350662DD2C05FA5F0043B2FC /* Dummy */,
 				35C311EF2C04871200649CE8 /* TravelMain */,
@@ -338,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3590F25B2C32A6B700652DBA /* NasaUrlSessionVC.swift in Sources */,
 				35461D092C0763BA00CEDF08 /* FullImageCell.swift in Sources */,
 				35A894E92C0DEE2E00B74494 /* ChattingData.swift in Sources */,
 				35A894F22C0DF66F00B74494 /* ChatRoomMessageTableViewCell.swift in Sources */,
@@ -365,6 +380,7 @@
 				35367D052C0876250055628F /* MapViewController.swift in Sources */,
 				35C311F92C049A5B00649CE8 /* CityViewController.swift in Sources */,
 				35D805CB2C04B1C3000D5F39 /* BigImageCell.swift in Sources */,
+				3590F25D2C32A6E000652DBA /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
